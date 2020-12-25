@@ -1,0 +1,77 @@
+{
+    "python.pythonPath": "C:\\Users\\User\\anaconda3\\envs\\mkhan\\python.exe",
+    "terminal.integrated.shell.windows":"C:\\Users\\User\\Desktop\\devops\\Git\\bin\\bash.exe",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope":["entity.name.function"],
+                "settings": {
+                    "foreground": "#FFC66D",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope":"constant.language.python",
+                "settings": {
+                    "foreground": "#3c3ff0",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope":"support.type.exception.python",
+                "settings": {
+                    "foreground": "#e42929",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope":"meta.attribute.python",
+                "settings":{
+                    "foreground": "#cc99cc",
+                }
+            },
+            {
+                "scope":"entity.name.type.class.python",
+                "settings":{
+                    "foreground": "#ff6666",
+                }
+            },
+            {            
+                "scope":"meta.function-call.generic.python",
+                "settings": {
+                    "foreground": "#f1e29d",
+                }
+            },
+            {            
+                "scope":"variable.parameter.function.language.special.self.python",
+                "settings": {
+                    "foreground": "#ab08f7",
+                }
+            },
+            {            
+                "scope":"comments",
+                "settings": {
+                    "foreground": "#2780d3",
+                }
+            }, 
+            {            
+                "scope":"string.quoted.docstring.multi.python",
+                "settings": {
+                    "foreground": "#3acc3a",
+                }
+            },
+            {            
+                "scope":"support.function",
+                "settings": {
+                    "foreground": "#00FFFF",
+                }
+            },
+            {
+                "scope":"variable.parameter.function-call.python",
+                "settings": {
+                    "foreground": "#ff0000",
+                }
+            } 
+        ]
+    }
+}
