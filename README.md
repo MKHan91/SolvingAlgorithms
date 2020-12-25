@@ -1,2 +1,2 @@
 # SolvingAlgorithms
-## Solve the algorithms problem for funny
+Solve the algorithms problem for funny
