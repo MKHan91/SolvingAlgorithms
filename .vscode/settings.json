@@ -1,6 +1,9 @@
 {
     "python.pythonPath": "C:\\Users\\User\\anaconda3\\envs\\mkhan\\python.exe",
     "terminal.integrated.shell.windows":"C:\\Users\\User\\Desktop\\devops\\Git\\bin\\bash.exe",
+    "[python]": {
+        "editor.semanticHighlighting.enabled": false
+    },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -71,7 +74,7 @@
                 "settings": {
                     "foreground": "#ff0000",
                 }
-            } 
+            }
         ]
     }
 }
