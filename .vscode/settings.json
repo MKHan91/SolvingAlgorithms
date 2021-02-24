@@ -43,28 +43,6 @@
                 }
             },
             {            
-                "scope":[
-                    "meta.function-call.python",
-                ],
-                "settings": {
-                    "foreground": "#f1e29d",
-                }
-            },
-            {            
-                "scope":"meta.function-call.arguments.python",
-                "settings": {
-                    "foreground": "#D4D4D4",
-                    "fontStyle": "italic"
-                }
-            },
-            {            
-                "scope":"variable.parameter.function.python",
-                "settings": {
-                    "foreground": "#fd0000",
-                    "fontStyle": "italic"
-                }
-            },
-            {            
                 "scope":"variable.parameter.function.language.special.self.python",
                 "settings": {
                     "foreground": "#ab08f7",
@@ -93,7 +71,7 @@
                 "settings": {
                     "foreground": "#ff0000",
                 }
-            }
+            } 
         ]
     }
 }
