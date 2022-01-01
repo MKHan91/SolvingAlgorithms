@@ -3,6 +3,12 @@
     "editor.semanticHighlighting.enabled": false,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
+             {
+                "scope":["variable.parameter.function.language.python"],
+                "settings": {
+                    "foreground": "#D4D4D4",
+                }
+            },
             {
                 "scope":["entity.name.function"],
                 "settings": {
