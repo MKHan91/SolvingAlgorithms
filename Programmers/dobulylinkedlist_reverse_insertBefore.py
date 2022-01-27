@@ -59,6 +59,23 @@ class DoublyLinkedList:
         prev = self.getAt(pos - 1)
         return self.insertAfter(prev, newNode)
 
+    def traverse(self):
+        result = []
+        curr = self.head
+        while curr.next.next:
+            curr = curr.next
+            result.append(curr.data)
+        return result
+    
+    def insertBefore(self, next, newNode):
+        prev = next.prev
+        newNode.prev = prev
+        newNode.next = next
+        prev.next = newNode
+        next.prev = newNode
+        self.nodeCount +=1
+        return True
+
 def solution(x):
     return 0
 
