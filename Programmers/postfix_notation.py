@@ -24,42 +24,71 @@ prec = {
 }
 
 def solution(S):
-    answer = ''
     opStack = ArrayStack()
+    answer = ''
     for char in S:
-        if char == "(":
-            opStack.push(char)
-        
-        elif char == "+" or char == "*" or char == "/" or char == "-":
+        if char in prec:
             if opStack.isEmpty():
                 opStack.push(char)
+            
+            elif char == "(" or prec[opStack.peek()] < prec[char]:
+                opStack.push(char)
+            
             else:
-                if opStack.data[-1] == "(":
-                    opStack.pop()
-                    opStack.push(char)
-                else:
-                    if prec[opStack.peek()] >= prec[char]:
-                        answer += opStack.pop()
-                        opStack.push(char)
-                    elif prec[opStack.peek()] < prec[char]:
-                        # answer += char
-                        opStack.push(char)
-                    # else:
-                    #     answer += opStack.pop()
-                    #     opStack.push(char)
-        elif char == ")":
-            answer += opStack.pop()
+                while not opStack.isEmpty() and prec[opStack.peek()] >= prec[char]:
+                    answer += opStack.pop()
+                opStack.push(char)
+        
         else:
-            answer += char
-
+            if char == ")":
+                while opStack.peek() != "(":
+                    answer += opStack.pop()
+                opStack.pop()
+            else:
+                answer += char
+                
     while not opStack.isEmpty():
-        if opStack.data[-1] == "(":
-            opStack.pop()
-        else:
-            answer += opStack.pop()
+        answer += opStack.pop()
+    
     return answer
 
+# def solution(S):
+#     answer = ''
+#     opStack = ArrayStack()
+#     for char in S:
+#         if char == "(":
+#             opStack.push(char)
+        
+#         elif char == "+" or char == "*" or char == "/" or char == "-":
+#             if opStack.isEmpty():
+#                 opStack.push(char)
+#             else:
+#                 if opStack.data[-1] == "(":
+#                     opStack.pop()
+#                     opStack.push(char)
+                
+#                 elif prec[opStack.peek()] < prec[char]:
+#                     opStack.push(char)
+                
+#                 else:
+#                     while not opStack.isEmpty() and prec[opStack.peek()] >= prec[char]:
+#                         answer += opStack.pop()
+#                     opStack.push(char)
+                
+#         elif char == ")":
+#             answer += opStack.pop()
+#         else:
+#             answer += char
+
+#     while not opStack.isEmpty():
+#         if opStack.data[-1] == "(":
+#             opStack.pop()
+#         else:
+#             answer += opStack.pop()
+#     return answer
+
 if __name__ == "__main__":
-    S = "A*(B-(C+D))"
+    # S = "A*(B-(C+D))"
+    S = "A+B*C*(D+E)"
     result = solution(S)
     print(result)
