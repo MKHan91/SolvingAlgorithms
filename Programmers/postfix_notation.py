@@ -89,6 +89,6 @@ def solution(S):
 
 if __name__ == "__main__":
     # S = "A*(B-(C+D))"
-    S = "A+B*C*(D+E)"
+    S = "A+(B-C*D)"
     result = solution(S)
     print(result)
