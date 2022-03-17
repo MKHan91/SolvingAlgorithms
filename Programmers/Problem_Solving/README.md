@@ -3,11 +3,17 @@
 ### blind_number.py
 > * Print the result of blinding some of the numbers given by string
 
-### brute_force.py
+### mock_test_brute_force.py
 > * There is the math answer sheet of three students.  
 > Compute each student's score by comparing the actual answer with the students' answer
 
->
+### compute_average.py
+> * Compute the average of data in list
+
+### compute_divisor_arr.py
+> * Find the divisible number array as ascending order.  
+> if divisible number is not, return zero.
+
 ### greedy_ps.py
 > * Find the maximum students with greedy algorithms  
 > 
@@ -15,9 +21,6 @@
 
 ### gcd_lcm.py
 > * Find the number of greatest common divisor (gcd) and least common multiple (lcm).
-
-### compute_average.py
-> * Compute the average of data in list
 
 ### year_2016.py
 > * Find the day of the week in 2016.
