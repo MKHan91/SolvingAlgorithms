@@ -7,3 +7,9 @@
 
 ### gcd_lcm.py
 > * Find the number of greatest common divisor (gcd) and least common multiple (lcm).
+
+### compute_average.py
+> * Compute the average of data in list
+
+### blind_number.py
+> * Print the result of blinding some of the numbers given by string
