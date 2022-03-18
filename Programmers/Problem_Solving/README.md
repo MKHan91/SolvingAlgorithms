@@ -14,6 +14,9 @@
 > * Find the divisible number array as ascending order.  
 > if divisible number is not, return zero.
 
+### decediing_order.py
+> * a=1
+
 ### greedy_ps.py
 > * Find the maximum students with greedy algorithms  
 > 
