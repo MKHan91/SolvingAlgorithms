@@ -14,8 +14,9 @@
 > * Find the divisible number array as ascending order.  
 > if divisible number is not, return zero.
 
-### decediing_order.py
-> * a=1
+### decending_order.py
+> * Arrage the given integer in decending order.  
+> The range of given integer is 1 ~ 8000000000. therefore, it must consider the data type range
 
 ### greedy_ps.py
 > * Find the maximum students with greedy algorithms  
