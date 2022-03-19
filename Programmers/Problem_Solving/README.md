@@ -18,6 +18,9 @@
 > * Arrage the given integer in decending order.  
 > The range of given integer is 1 ~ 8000000000. therefore, it must consider the data type range
 
+### delete_MinValue.py
+> * Find the minimum value and remove it. if the given array is empty, return the [-1].
+
 ### greedy_ps.py
 > * Find the maximum students with greedy algorithms  
 > 
