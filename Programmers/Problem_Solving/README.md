@@ -21,13 +21,19 @@
 ### delete_MinValue.py
 > * Find the minimum value and remove it. if the given array is empty, return the [-1].
 
+### gcd_lcm.py
+> * Find the number of greatest common divisor (gcd) and least common multiple (lcm).
+
 ### greedy_ps.py
 > * Find the maximum students with greedy algorithms  
 > 
 > * Solve the problem using the number of students who lost gym clothes and students who brought the spare clothes
 
-### gcd_lcm.py
-> * Find the number of greatest common divisor (gcd) and least common multiple (lcm).
+### make_numbers.py
+> * d
+
+### make_strange_number.py
+> * d
 
 ### year_2016.py
 > * Find the day of the week in 2016.
