@@ -1,7 +1,3 @@
-from cv2 import exp
-from numpy import multiply
-
-
 class ArrayStack:
 
     def __init__(self):

@@ -62,7 +62,6 @@ def solution(expr):
             else:
                 t = S.pop()
                 if t != match[c]:
-                    a=1
                     return False
     return S.isEmpty()
 
