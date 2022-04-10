@@ -1,11 +1,8 @@
 def solution(n):
     # 재귀 함수를 쓸 경우 iterative 방법보다 더 많은 시간 복잡도 소요
-    f0, f1 = 0, 1
-    if n == 0:
-        answer = f0
-    elif n <= 2:
-        answer = f0 + f1
-    elif n > 2:
+    if n <= 1:
+        answer = n
+    else:
         answer = solution(n-2) + solution(n-1)
         answer %= 1234567
     return answer
